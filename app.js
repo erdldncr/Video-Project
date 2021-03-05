@@ -1,3 +1,5 @@
+
+
 const btn=document.querySelector('.switch-btn')
 const video=document.querySelector('.video-container')
 btn.addEventListener('click',()=>{
@@ -10,3 +12,11 @@ btn.addEventListener('click',()=>{
         video.play()
     }
 })
+//preLoader
+window.addEventListener('load',function(){
+    
+    setTimeout(function(){
+     document.querySelector('.preloader').classList.add('hide-preloader')
+ },3000)
+ })
+ 
